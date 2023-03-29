@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.chat.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s65dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/ivChatGpt"
+            android:layout_width="@dimen/s48dp"
+            android:layout_height="@dimen/s48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/s16dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_circle"
+            android:padding="@dimen/s8dp"
+            android:src="@drawable/robot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/s16dp"
+            android:layout_toEndOf="@id/ivChatGpt"
+            android:text="@string/chatgpt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs20sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cvQuery"
+        android:layout_below="@id/rlActionBar" />
+
+    <RelativeLayout
+        android:id="@+id/rlExampleQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cvQuery"
+        android:layout_below="@id/rlActionBar">
+
+        <ImageView
+            android:id="@+id/ivHint"
+            android:layout_width="@dimen/s36dp"
+            android:layout_height="@dimen/s36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s16dp"
+            android:src="@drawable/question" />
+
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivHint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s8dp"
+            android:text="@string/exampleQuestion"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/fs18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s400dp"
+            android:layout_below="@id/txtHint"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/s4dp"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_hint_question" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvQuery"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/s24dp"
+        android:layout_marginBottom="@dimen/s24dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/s30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/idEdtQuery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/s16dp"
+                android:layout_toStartOf="@id/iv_send"
+                android:background="@null"
+                android:hint="@string/hint"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/grey_light" />
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="@dimen/s56dp"
+                android:layout_height="@dimen/s56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/s16dp"
+                android:src="@drawable/ic_send" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+

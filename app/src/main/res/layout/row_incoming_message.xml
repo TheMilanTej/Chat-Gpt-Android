@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/s70dp"
+    tools:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/rlMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/s16dp"
+        android:layout_marginTop="@dimen/s8dp"
+        android:background="@drawable/shape_round"
+        android:backgroundTint="@color/incoming">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/s200dp"
+            android:layout_height="@dimen/s200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/s24dp"
+            android:layout_marginTop="@dimen/s24dp"
+            android:layout_marginEnd="@dimen/s24dp"
+            android:layout_marginBottom="@dimen/s24dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            tools:src="@drawable/app_fg" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="start"
+            android:paddingHorizontal="@dimen/s18dp"
+            android:paddingVertical="@dimen/s16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMessageOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMessage"
+        android:layout_alignStart="@id/rlMessage"
+        android:layout_marginVertical="@dimen/s8dp"
+        android:layout_marginStart="@dimen/s16dp">
+
+        <ImageView
+            android:id="@+id/ivCopy"
+            android:layout_width="@dimen/s24dp"
+            android:layout_height="@dimen/s24dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_copy"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="@dimen/s24dp"
+            android:layout_height="@dimen/s24dp"
+            android:layout_marginStart="@dimen/s8dp"
+            android:layout_toEndOf="@id/ivCopy"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_share"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivSpeak"
+            android:layout_width="@dimen/s24dp"
+            android:layout_height="@dimen/s24dp"
+            android:layout_marginStart="@dimen/s8dp"
+            android:layout_toEndOf="@id/ivShare"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_mic"
+            android:visibility="gone"
+            app:tint="@color/light_black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

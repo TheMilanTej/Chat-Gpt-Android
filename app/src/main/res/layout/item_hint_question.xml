@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlHintQuestion"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/s12dp"
+    android:layout_marginVertical="@dimen/s8dp"
+    app:cardBackgroundColor="@color/incoming"
+    app:cardCornerRadius="@dimen/s12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtHintQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/s16dp"
+            android:layout_marginTop="@dimen/s16dp"
+            android:layout_marginEnd="@dimen/s16dp"
+            android:layout_marginBottom="@dimen/s16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs16sp" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

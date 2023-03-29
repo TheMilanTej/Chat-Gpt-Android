@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/s8dp"
+    android:background="@drawable/shape_round"
+    android:backgroundTint="@color/incoming">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/s16dp"
+        android:layout_marginTop="@dimen/s8dp"
+        android:text="1. Customer service"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginStart="@dimen/s16dp"
+        android:layout_marginTop="@dimen/s4dp"
+        android:text="ChatGPT can improve customer service by providing fast and accurate responses, 24/7 availability, multilingual support, scalability, personalization, cost-effectiveness, and data analytics."
+        android:textColor="@color/white_lite" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChatNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDesc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="@dimen/s8dp"
+        android:layout_marginEnd="@dimen/s16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/chat_now"
+        android:textStyle="bold" />
+</RelativeLayout>

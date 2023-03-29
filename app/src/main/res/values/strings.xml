@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Smart Chat-Bot : Powerful ChatGPT AI Chatbot</string>
+    <string name="chatgpt">ChatGPT</string>
+    <string name="hint">Write your question?</string>
+    <string name="chat_now">CHAT NOW</string>
+    <string name="example">Example :</string>
+    <string name="create_sample_post">Create Sample Question</string>
+    <string name="create_your_sample_post">Create Your Own Sample Question</string>
+    <string name="exampleQuestion">Exmaple Question</string>
+</resources>

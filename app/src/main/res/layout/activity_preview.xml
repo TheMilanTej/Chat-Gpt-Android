@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.preview.PreviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s65dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/s16dp"
+            android:text="@string/chatgpt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPreviewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s16dp"
+                android:text="Create Social Media Post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fs26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPreviewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPreviewTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/s16dp"
+                android:layout_marginTop="@dimen/s16dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/s4dp"
+                android:text="You can ask ChatGPT about fitness tips, workout routines, nutrition advice, sports events, and sports equipment recommendations in the Sports and Fitness sector."
+                android:textColor="@color/white"
+                android:textSize="@dimen/fs18sp" />
+
+            <TextView
+                android:id="@+id/txtExample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPreviewDesc"
+                android:layout_marginStart="@dimen/s16dp"
+                android:layout_marginTop="@dimen/s16dp"
+                android:text="@string/example"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/fs20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlExampleQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s100dp"
+                android:layout_below="@id/txtExample"
+                android:layout_marginHorizontal="@dimen/s16dp"
+                android:layout_marginTop="@dimen/s8dp"
+                android:background="@drawable/shape_round"
+                android:backgroundTint="@color/incoming">
+
+                <TextView
+                    android:id="@+id/txtExampleQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/s16dp"
+                    android:layout_marginTop="@dimen/s10dp"
+                    android:text="How can we increase our donations and funding for our non-profit organization?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fs14sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSampleQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlExampleQuestion"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/s16dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/create_sample_post" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYourSampleQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSampleQuestion"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/s16dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/create_your_sample_post" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
