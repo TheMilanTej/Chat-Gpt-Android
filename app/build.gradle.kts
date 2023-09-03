@@ -28,11 +28,11 @@ android {
             )
 
             resValue("string", "APP_ADS_ID", "ca-app-pub-9275714082229531~3496437395")
-            resValue("string", "APP_BANNER_ADS_ID", "ca-app-pub-9275714082229531/5982321317")
-            resValue("string", "APP_FULL_SCR_ID", "ca-app-pub-9275714082229531/4451717417")
-            resValue("string", "APP_NATIVE_ID", "ca-app-pub-9275714082229531/6662947786")
-            resValue("string", "APP_APP_OPEN_ID", "ca-app-pub-9275714082229531/1938887101")
-            resValue("string", "APP_REWARD_ID", "ca-app-pub-9275714082229531/5562189927")
+            resValue("string", "ADS_APP_BANNER_ID", "ca-app-pub-9275714082229531/5982321317")
+            resValue("string", "ADS_APP_FULL_SCR_ID", "ca-app-pub-9275714082229531/4451717417")
+            resValue("string", "ADS_APP_NATIVE_ID", "ca-app-pub-9275714082229531/6662947786")
+            resValue("string", "ADS_APP_OPEN_ID", "ca-app-pub-9275714082229531/1938887101")
+            resValue("string", "ADS_REWARD_ID", "ca-app-pub-9275714082229531/5562189927")
         }
         debug {
             proguardFiles(
@@ -40,11 +40,11 @@ android {
             )
 
             resValue("string", "APP_ADS_ID", "ca-app-pub-3940256099942544~3347511713")
-            resValue("string", "APP_BANNER_ADS_ID", "ca-app-pub-3940256099942544/6300978111")
-            resValue("string", "APP_FULL_SCR_ID", "ca-app-pub-3940256099942544/1033173712")
-            resValue("string", "APP_NATIVE_ID", "ca-app-pub-3940256099942544/2247696110")
-            resValue("string", "APP_APP_OPEN_ID", "ca-app-pub-3940256099942544/3419835294")
-            resValue("string", "APP_REWARD_ID", "ca-app-pub-3940256099942544/5224354917")
+            resValue("string", "ADS_APP_BANNER_ID", "ca-app-pub-3940256099942544/6300978111")
+            resValue("string", "ADS_APP_FULL_SCR_ID", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "ADS_APP_NATIVE_ID", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "ADS_APP_OPEN_ID", "ca-app-pub-3940256099942544/3419835294")
+            resValue("string", "ADS_REWARD_ID", "ca-app-pub-3940256099942544/5224354917")
         }
     }
     compileOptions {
@@ -66,6 +66,11 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.gms:play-services-ads:22.3.0")
+    //implementation("androidx.lifecycle:lifecycle-process:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+
 
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.extJunit)

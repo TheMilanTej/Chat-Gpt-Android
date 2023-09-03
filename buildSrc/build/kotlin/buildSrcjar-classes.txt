@@ -1,1 +1,1 @@
-/mnt/92B83A46B83A295D/androidPro/LiveProject/ChatGptBotAndroid/buildSrc/build/classes/kotlin/main/AppConfig.class:/mnt/92B83A46B83A295D/androidPro/LiveProject/ChatGptBotAndroid/buildSrc/build/classes/kotlin/main/Dependencies.class
+/mnt/5098BCDD4294AC46/androidPro/LiveProject/ChatGptBotAndroid/buildSrc/build/classes/kotlin/main/AppConfig.class:/mnt/5098BCDD4294AC46/androidPro/LiveProject/ChatGptBotAndroid/buildSrc/build/classes/kotlin/main/Dependencies.class

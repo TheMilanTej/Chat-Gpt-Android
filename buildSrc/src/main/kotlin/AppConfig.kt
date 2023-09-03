@@ -1,7 +1,7 @@
 object AppConfig {
-    const val namespace = "com.example.chatgptbotandroid"
+    const val namespace = "com.milantejani.aibotandroid"
     const val compileSdk = 33
-    const val applicationId = "com.mtapps.chatgpt.chatbot"
+    const val applicationId = "com.milantejani.aibotandroid"
     const val minSdk = 21
     const val targetSdk = 33
     const val versionCode = 1
